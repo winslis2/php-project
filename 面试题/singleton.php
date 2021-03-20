@@ -17,7 +17,6 @@ class Singleton {
         }
     }
 }
-
 $singleton = Singleton::getInstance();
 $singleton2 = Singleton::getInstance();
 var_dump($singleton===$singleton2);

@@ -1,4 +1,6 @@
 <?php
-$client = new \Redis();
-var_dump($client);
-echo 1112221;
+//$a = new SplStack();
+//$a->push(1);
+//var_dump($a);
+$redis = new \Redis();
+var_dump($redis);
