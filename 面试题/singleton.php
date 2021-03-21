@@ -1,18 +1,21 @@
 <?php
-class Singleton {
+class Singleton
+{
     private static $instance = null;
     private function __construct()
     {
         return;
     }
-    private function __clone() {
+    private function __clone()
+    {
         echo 'clone is not allowed';
     }
 
-    public static function getInstance() {
+    public static function getInstance()
+    {
         if (self::$instance) {
             return new self();
-        }else{
+        } else {
             return self::$instance;
         }
     }

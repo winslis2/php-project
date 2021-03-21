@@ -15,29 +15,30 @@ $goodData = [
 $sort = ["locate", "memory6"];
 $keys = array_keys($goodData);
 foreach ($keys as $key) {
-    if (!in_array($key,$sort)) {
-        array_push($sort,$key);
+    if (!in_array($key, $sort)) {
+        array_push($sort, $key);
     }
 }
 $values = [];
 foreach ($sort as $key) {
-    array_push($values,$goodData[$key]);
+    array_push($values, $goodData[$key]);
 }
 
-function CartesianProduct($sets){
+function CartesianProduct($sets)
+{
     // 保存结果
-$result = array();
+    $result = array();
     // 循环遍历集合数据
-    for($i=0,$count=count($sets); $i<$count-1; $i++){
+    for ($i=0,$count=count($sets); $i<$count-1; $i++) {
         // 初始化
-        if($i==0){
+        if ($i==0) {
             $result = $sets[$i];
         }
         // 保存临时数据
         $tmp = array();
         // 结果与下一个集合计算笛卡尔积
-        foreach($result as $res){
-            foreach($sets[$i+1] as $set){
+        foreach ($result as $res) {
+            foreach ($sets[$i+1] as $set) {
                 $tmp[] = $res.','.$set;
             }
         }
@@ -46,11 +47,10 @@ $result = array();
     }
     $res = [];
     foreach ($result as $value) {
-        $v = explode(',',$value);
-        array_push($res,$v);
+        $v = explode(',', $value);
+        array_push($res, $v);
     }
     var_dump($res);
     return $res;
-
 }
 CartesianProduct($values);

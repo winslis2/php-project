@@ -8,21 +8,21 @@ $goodData = [
 ];
 $res = [];
 //var_dump($goodData['color'][0]);
-foreach($goodData['color'] as  $color) {
-    foreach($goodData['size'] as  $size){
-        foreach($goodData['meal'] as  $meal) {
-            foreach($goodData['memory'] as $memory) {
-                foreach($goodData['locate'] as $locate) {
+foreach ($goodData['color'] as  $color) {
+    foreach ($goodData['size'] as  $size) {
+        foreach ($goodData['meal'] as  $meal) {
+            foreach ($goodData['memory'] as $memory) {
+                foreach ($goodData['locate'] as $locate) {
                     $data = [];
-                    array_push($data,$color);
-                    array_push($data,$size);
-                    array_push($data,$meal);
-                    array_push($data,$memory);
-                    array_push($data,$locate);
-                    array_push($data,[]);
-                    array_push($data,[]);
-                    array_push($data,[]);
-                    array_push($res,$data);
+                    array_push($data, $color);
+                    array_push($data, $size);
+                    array_push($data, $meal);
+                    array_push($data, $memory);
+                    array_push($data, $locate);
+                    array_push($data, []);
+                    array_push($data, []);
+                    array_push($data, []);
+                    array_push($res, $data);
                 }
             }
         }
