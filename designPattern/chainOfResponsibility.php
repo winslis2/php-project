@@ -29,7 +29,7 @@ class police {
     private $level = null;
     private $superior = 'admin';
     public function process($level) {
-       echo '抓起来';
+       echo '抓起来ba';
     }
 }
 $level = 2;
