@@ -31,6 +31,7 @@ class MathDiv implements Math {
 
     public function calc($a, $b)
     {
+
         return $a/$b;
     }
 }
