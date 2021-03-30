@@ -1,6 +1,7 @@
 {
     "require": {
-        "easyswoole/easyswoole": "^3.4"
+        "easyswoole/easyswoole": "^3.4",
+        "easyswoole/verifycode": "^3.0"
     },
     "autoload": {
         "psr-4": {

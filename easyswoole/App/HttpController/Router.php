@@ -16,6 +16,10 @@ class Router extends AbstractRouter
         /*
           * eg path : /router/index.html  ; /router/ ;  /router
          */
+//        $routeCollector->get('VerifyCode/verifyCode','/VerifyCode/verifyCode');
+//        $routeCollector->get('/','/VerifyCode/verifyCode');
+
+
         $routeCollector->get('/router','/test');
         /*
          * eg path : /closure/index.html  ; /closure/ ;  /closure

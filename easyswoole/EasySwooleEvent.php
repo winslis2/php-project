@@ -11,6 +11,7 @@ class EasySwooleEvent implements Event
 {
     public static function initialize()
     {
+        echo 'in EasySwooleEvent';
         date_default_timezone_set('Asia/Shanghai');
     }
 

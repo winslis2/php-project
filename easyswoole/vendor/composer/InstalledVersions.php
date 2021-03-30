@@ -29,7 +29,7 @@ private static $installed = array (
     'aliases' => 
     array (
     ),
-    'reference' => 'be1791689b33e42a8cb0ea5d3f5b096b19091441',
+    'reference' => '344109f4bc8487bebd5300ddcf22252513c05fca',
     'name' => '__root__',
   ),
   'versions' => 
@@ -41,7 +41,7 @@ private static $installed = array (
       'aliases' => 
       array (
       ),
-      'reference' => 'be1791689b33e42a8cb0ea5d3f5b096b19091441',
+      'reference' => '344109f4bc8487bebd5300ddcf22252513c05fca',
     ),
     'doctrine/lexer' => 
     array (
@@ -222,6 +222,15 @@ private static $installed = array (
       array (
       ),
       'reference' => '6a8e86babd0792d93b890cc977a4da9c3cb1a32b',
+    ),
+    'easyswoole/verifycode' => 
+    array (
+      'pretty_version' => '3.0.2',
+      'version' => '3.0.2.0',
+      'aliases' => 
+      array (
+      ),
+      'reference' => 'd79497dc1b1c7bbaeceb0c62fea6a9a96f7957cb',
     ),
     'nikic/fast-route' => 
     array (

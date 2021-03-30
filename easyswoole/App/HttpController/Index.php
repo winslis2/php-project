@@ -15,10 +15,9 @@ class Index extends Controller
         if(!is_file($file)){
             $file = EASYSWOOLE_ROOT.'/src/Resource/Http/welcome.html';
         }
-//        $this->response()->write('hello world');
-        $this->response()->write(file_get_contents($file));
+        $this->response()->write('hello world');
+//        $this->response()->write(file_get_contents($file));
     }
-
     function test()
     {
         $this->response()->write('this is test');
