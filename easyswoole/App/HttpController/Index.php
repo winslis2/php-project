@@ -8,10 +8,10 @@ use EasySwoole\Http\AbstractInterface\Controller;
 
 class Index extends Controller
 {
-
+    public  $name ='aaa';
     public function index()
     {
-
+        $name = 'hello';
         \EasySwoole\EasySwoole\Task\TaskManager::getInstance()->async(function () {
 
             echo 'async'.PHP_EOL;
@@ -40,10 +40,19 @@ class Index extends Controller
     }
     function test()
     {
-        echo posix_getpid().PHP_EOL;
+//        global $_COMPANY_INFO;
+//        $_COMPANY_INFO = 'hello';
+//        $this->response()->write(posix_getpid());
+//        \co::sleep(50);
+        $this->name='lis2';
     }
     function test1() {
-        echo posix_getpid().PHP_EOL;
+//        global $_COMPANY_INFO;
+//        $this->response()->write(posix_getpid());
+//        \co::sleep(50);
+        echo $this->name;
+
+
     }
 
     protected function actionNotFound(?string $action)

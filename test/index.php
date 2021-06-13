@@ -1,7 +1,10 @@
 <?php
-//只能返回sting|null
-function test():?string  {
-    echo "hello";
-    return null;
+$title = '111';
+$titleEn = 'sss';
+if (!$title && $titleEn) {
+    $title = $titleEn;
 }
-test();
+//var_dump($title);
+
+$str = mb_substr($title,0,5);
+var_dump($str);
