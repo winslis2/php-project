@@ -1,10 +1,12 @@
 <?php
-$title = '111';
-$titleEn = 'sss';
-if (!$title && $titleEn) {
-    $title = $titleEn;
-}
-//var_dump($title);
+try {
+    $errorMessage[] = [
+        'error_id' =>  10010,
+        'message' => '请尝试切换运输政策服务或引用在线政策',
+        'long' =>  '请尝试切换运输政策服务或引用在线政策'
+    ];
 
-$str = mb_substr($title,0,5);
-var_dump($str);
+  throw new Exception(json_encode($errorMessage));
+}catch(Exception $e){
+var_dump(json_decode($e->getMessage(),true));
+}
